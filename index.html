@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💌 Para Ti, Mi Amor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Fondo de corazones flotantes -->
+    <div class="hearts-bg" id="heartsBg"></div>
+    
+    <!-- Botón de música -->
+    <button class="music-btn" id="musicBtn" aria-label="Música">🎵</button>
+    
+    <!-- Contenedor principal -->
+    <main class="container">
+        <!-- PANTALLA 0: Bienvenida - Sobre -->
+        <section class="screen active" id="screen0">
+            <div class="envelope-container">
+                <div class="envelope" id="envelope">
+                    <div class="envelope-flap"></div>
+                    <div class="envelope-body">
+                        <div class="envelope-heart">❤️</div>
+                    </div>
+                </div>
+            </div>
+            <p class="hint">Toca el sobre 💌</p>
+        </section>
+
+        <!-- PANTALLA 1: Mensaje inicial -->
+        <section class="screen" id="screen1">
+            <div class="illustration">
+                <div class="bears">
+                    <span class="bear">🧸</span>
+                    <span class="heart-icon">💕</span>
+                    <span class="bear">🧸</span>
+                </div>
+            </div>
+            <p class="message">Tengo algo muy bonito que quiero compartir contigo, mi amor 💖</p>
+            <button class="btn primary-btn" id="startBtn">Continuar ✨</button>
+        </section>
+
+        <!-- PANTALLA 2: Sorpresas -->
+        <section class="screen" id="screen2">
+            <div class="illustration">
+                <span class="bunny">🐇</span>
+                <span class="heart-icon">💗</span>
+                <span class="bunny">🐇</span>
+            </div>
+            <p class="message" id="questionMsg">¿Sabes cuál es una de las cosas más bonitas que me han pasado?</p>
+            <p class="message hidden" id="loveMsg"></p>
+            <button class="btn primary-btn" id="nextMsgBtn">¿Qué cosa, mi amor? 💌</button>
+        </section>
+
+        <!-- PANTALLA 3: Pregunta especial -->
+        <section class="screen" id="screen3">
+            <div class="illustration">
+                <span class="star">⭐</span>
+                <span class="heart-icon">💖</span>
+                <span class="star">⭐</span>
+            </div>
+            <p class="message">¿Te puedo hacer una promesa? 🤍</p>
+            <div class="btn-group">
+                <button class="btn yes-btn" id="yesBtn">Sí, mi amor 🥰</button>
+                <button class="btn tell-btn" id="tellBtn">Cuéntame ✨</button>
+            </div>
+            <p class="message hidden" id="tellMsg"></p>
+            <button class="btn secondary-btn hidden" id="continueBtn">Continuar 💫</button>
+        </section>
+
+        <!-- PANTALLA 4: La Promesa -->
+        <section class="screen" id="screen4">
+            <div class="letter-card">
+                <h3>💍 Mi Promesa</h3>
+                <p class="message promise-text">
+                    No te prometo que todos los días serán perfectos,<br><br>
+                    pero sí que quiero cuidar lo bonito que estamos construyendo, escucharte, apoyarte y recordarte lo importante que eres para mí. ❤️
+                </p>
+            </div>
+            <button class="btn primary-btn" id="finalBtn">Ver nuestro final 💕</button>
+        </section>
+
+        <!-- PANTALLA 5: Pantalla Final -->
+        <section class="screen" id="screen5">
+            <div class="illustration big-illustration">
+                <span class="bear-big">🧸</span>
+                <span class="heart-big">💑</span>
+                <span class="bear-big">🧸</span>
+            </div>
+            
+            <!-- Contador de tiempo juntos -->
+            <div class="counter-box" id="counterBox">
+                <p class="counter-label">💞 Estamos juntos desde:</p>
+                <p class="counter-date" id="specialDate">--/--/----</p>
+                <p class="counter-time" id="timeTogether">-- días -- horas</p>
+            </div>
+            
+            <p class="message final-quote">
+                "Si volviera a empezar mi historia,<br>
+                me encantaría volver a encontrarte." ✨
+            </p>
+            <h2 class="final-love">Te amo muchísimo, mi amor 💖</h2>
+            <button class="btn restart-btn" id="restartBtn">🔄 Volver a leer mi cartita</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
